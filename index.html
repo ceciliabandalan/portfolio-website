@@ -30,11 +30,11 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <img src="https://uploads-ssl.webflow.com/61fc4f66a0be3c332e2c0874/61fc6330897b8756a59a5d45_CECE%20LOGO%20BANNER.png" alt="Cecilia">
+    <div class="container">
+      <img src="https://uploads-ssl.webflow.com/61fc4f66a0be3c332e2c0874/61fc6330897b8756a59a5d45_CECE%20LOGO%20BANNER.png" alt="Cecilia" class="logo">
 
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -48,24 +48,25 @@
     <div>
 
       <!-- For the hero section -->
-      <div>
+      <div id="hero" class="center">
         <h1>Welcome to my Portfolio!</h1>
         <span>I'm a UX/UI designer from San Francisco!</span>
         <p>I love tackling complex problems and creating intuitive solutions.</p>
       </div>
 
       <!-- For your work/projects -->
-      <div>
-        <h2>Check out my recent work.</h2>
+      <div id="work">
+        <div class="container">
+          <h2>Check out my recent work.</h2>
 
-        <div>
-          <div>
+
+          <div class="row">
             <!-- open row that holds (2) columns for project -->
             <div>
               <!-- open first column (used for image) -->
               <picture>
                 <source srcset="images/inquizi/600px/inquizi-cover-600.png" media="(max-width:767px)">
-                <img src="images/inquizi/1200px/inquizi-cover-1200.png" alt="Inquizi">
+                <img src="images/inquizi/1200px/inquizi-cover-1200.png" alt="Inquizi" class="cover">
               </picture>
             </div><!-- end first column -->
             <div>
@@ -85,14 +86,14 @@
         </div>
 
         <div>
-          <div>
-            <div>
+          <div id="work">
+            <div class="container">
               <!-- open row that holds (2) columns for project -->
-              <div>
+              <div class="row">
                 <!-- open first column (used for image) -->
                 <picture>
                   <source srcset="images/fitted/600px/fitted-cover-600.png" media="(max-width:767px)">
-                  <img src="images/fitted/1200px/fitted-cover-1200.png" alt="Fitted">
+                  <img src="images/fitted/1200px/fitted-cover-1200.png" alt="Fitted" class="cover">
                 </picture>
               </div><!-- end first column -->
               <div>
@@ -117,9 +118,9 @@
   </main>
 
   <!-- For the footer -->
-  <footer id="contact">
+  <footer id="contact" class="center">
 
-    <div>
+    <div class="container">
       <h2>Let's Connect!</h2>
       <p>
         Do you like my work and want to discuss opportunities? Please get in touch.
@@ -139,7 +140,7 @@
       <div>
         <!--Social Media Layout and Placeholders-->
         <a href="https://www.linkedin.com/in/cecilia-bandalan/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%"
-            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" class="linkedin">
             <g id="g5891">
               <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
               <g id="shapes">

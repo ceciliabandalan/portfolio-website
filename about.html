@@ -31,11 +31,11 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <img src="https://uploads-ssl.webflow.com/61fc4f66a0be3c332e2c0874/61fc6330897b8756a59a5d45_CECE%20LOGO%20BANNER.png" alt="Cecilia">
+    <div class="container">
+      <img src="https://uploads-ssl.webflow.com/61fc4f66a0be3c332e2c0874/61fc6330897b8756a59a5d45_CECE%20LOGO%20BANNER.png" alt="Cecilia" class="logo">
 
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -46,9 +46,9 @@
 
   <!-- Main Starts Here -->
   <main>
-    <div>
+    <div class="container">
 
-      <div>
+      <div id="about" class="center">
         <h1>About</h1>
 
         <div>
@@ -56,7 +56,7 @@
           <div>
             <picture>
               <source srcset="images/about/600px/selfie-600.png" media="(max-width:767px)">
-              <img src="images/about/1200px/selfie-1200.png" alt="Selfie">
+              <img src="images/about/1200px/selfie-1200.png" alt="Selfie" class="selfie">
             </picture>
           </div>
 
@@ -72,34 +72,35 @@
           <h2>Skills & Tools</h2>
 
           <h3>Relevant Skills</h3>
-          <ul>
-            <li>User Research</li>
-            <li>Information Architecture</li>
-            <li>Rapid Prototyping</li>
-            <li>Wireframing</li>
-            <li>Interaction Design</li>
-            <li>Responsive Design</li>
-            <li>Visual Design</li>
-            <li>Storytelling</li>
-          </ul>
+          <skills>
+            <ul class="skills">
+              <li>User Research</li>
+              <li>Information Architecture</li>
+              <li>Rapid Prototyping</li>
+              <li>Wireframing</li>
+              <li>Interaction Design</li>
+              <li>Responsive Design</li>
+              <li>Visual Design</li>
+              <li>Storytelling</li>
+            </ul>
 
-          <h3>Tools I Use</h3>
-          <ul>
-            <li>Figma</li>
-            <li>Invision</li>
-            <li>Balsamiq</li>
-            <li>Whimsical</li>
-          </ul>
-
+            <h3>Tools I Use</h3>
+            <ul class="skills">
+              <li>Figma</li>
+              <li>Invision</li>
+              <li>Balsamiq</li>
+              <li>Whimsical</li>
+            </ul>
+          </skills>
         </div>
       </div>
     </div>
   </main>
 
   <!-- For the footer -->
-  <footer id="contact">
+  <footer id="contact" class="center">
 
-    <div>
+    <div class="container">
       <h2>Let's Connect!</h2>
       <p>
         Do you like my work and want to discuss opportunities? Please get in touch.
@@ -113,13 +114,13 @@
       </div>
 
       <div>
-        <a href="about.html#skills">Relevant Skills</a>
+        <a href="about.html#skills">My Skills</a>
       </div>
 
       <div>
         <!--Social Media Layout and Placeholders-->
         <a href="https://www.linkedin.com/in/cecilia-bandalan/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%"
-            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" class="linkedin">
             <g id="g5891">
               <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
               <g id="shapes">

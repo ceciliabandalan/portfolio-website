@@ -30,11 +30,11 @@
   <!-- For the header -->
   <header>
     <!-- For the navigation -->
-    <div>
-      <img src="https://uploads-ssl.webflow.com/61fc4f66a0be3c332e2c0874/61fc6330897b8756a59a5d45_CECE%20LOGO%20BANNER.png" alt="Cecilia">
+    <div class="container">
+      <img src="https://uploads-ssl.webflow.com/61fc4f66a0be3c332e2c0874/61fc6330897b8756a59a5d45_CECE%20LOGO%20BANNER.png" alt="Cecilia" class="logo">
 
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -45,9 +45,10 @@
 
   <!-- Main Starts Here -->
   <main>
-    <div>
+    <div class="container">
+
       <!-- Project Title -->
-      <div>
+      <div id="inquizi" class="center">
         <h1>Inquizi</h1>
 
         <div>
@@ -55,7 +56,7 @@
           <div>
             <picture>
               <source srcset="images/inquizi/600px/inquizi-cover-600.png" media="(max-width:767px)">
-              <img src="images/inquizi/1200px/inquizi-cover-1200.png" alt="InquiziCover">
+              <img src="images/inquizi/1200px/inquizi-cover-1200.png" alt="InquiziCover" class="proof">
             </picture>
           </div>
 
@@ -81,7 +82,7 @@
           <div>
             <picture>
               <source srcset="images/inquizi/600px/user-interviews-600.png" media="(max-width:767px)">
-              <img src="images/inquizi/1200px/user-interviews-1200.png" alt="user-interviews">
+              <img src="images/inquizi/1200px/user-interviews-1200.png" alt="user-interviews" class="proof">
             </picture>
           </div>
 
@@ -104,7 +105,7 @@
           <div>
             <picture>
               <source srcset="images/inquizi/600px/user-persona-600.png" media="(max-width:767px)">
-              <img src="images/inquizi/1200px/user-persona-1200.png" alt="user-persona">
+              <img src="images/inquizi/1200px/user-persona-1200.png" alt="user-persona" class="proof">
             </picture>
           </div>
 
@@ -116,7 +117,7 @@
           <div>
             <picture>
               <source srcset="images/inquizi/600px/task-flows-600.png" media="(max-width:767px)">
-              <img src="images/inquizi/1200px/task-flows-1200.png" alt="user-flows">
+              <img src="images/inquizi/1200px/task-flows-1200.png" alt="user-flows" class="proof">
             </picture>
           </div>
 
@@ -127,50 +128,50 @@
           <h3>Wireframing</h3>
 
           <h4>Low Fidelity Wireframes</h4>
+          <wireframes>
+            <p>Here I've created 4 wireframes to represent the actions my users will most likely take once they use the app:
 
-          <p>Here I've created 4 wireframes to represent the actions my users will most likely take once they use the app:
+            <ul>
+              <li>Sign up</li>
 
-          <ul>
-            <li>Sign up</li>
+              <div>
+                <picture>
+                  <source srcset="images/inquizi/600px/sign-up-600.png" media="(max-width:767px)">
+                  <img src="images/inquizi/1200px/sign-up-1200.png" alt="sign-up" class="proof">
+                </picture>
+              </div>
 
-            <div>
-              <picture>
-                <source srcset="images/inquizi/600px/sign-up-600.png" media="(max-width:767px)">
-                <img src="images/inquizi/1200px/sign-up-1200.png" alt="sign-up">
-              </picture>
-            </div>
+              <li>Onboard</li>
 
-            <li>Onboard</li>
+              <div>
+                <picture>
+                  <source srcset="images/inquizi/600px/onboarding-600.png" media="(max-width:767px)">
+                  <img src="images/inquizi/1200px/onboarding-1200.png" alt="onboard" class="proof">
+                </picture>
+              </div>
 
-            <div>
-              <picture>
-                <source srcset="images/inquizi/600px/onboarding-600.png" media="(max-width:767px)">
-                <img src="images/inquizi/1200px/onboarding-1200.png" alt="onboard">
-              </picture>
-            </div>
+              <li>Create a New Flashcard</li>
 
-            <li>Create a New Flashcard</li>
+              <div>
+                <picture>
+                  <source srcset="images/inquizi/600px/create-a-flashcard-600.png" media="(max-width:767px)">
+                  <img src="images/inquizi/1200px/create-a-flashcard-1200.png" alt="create-flash" class="proof">
+                </picture>
+              </div>
 
-            <div>
-              <picture>
-                <source srcset="images/inquizi/600px/create-a-flashcard-600.png" media="(max-width:767px)">
-                <img src="images/inquizi/1200px/create-a-flashcard-1200.png" alt="create-flash">
-              </picture>
-            </div>
+              <li>Study From a Card Deck</li>
 
-            <li>Study From a Card Deck</li>
+              <div>
+                <picture>
+                  <source srcset="images/inquizi/600px/study-a-deck-600.png" media="(max-width:767px)">
+                  <img src="images/inquizi/1200px/study-a-deck-1200.png" alt="study-deck" class="proof">
+                </picture>
+              </div>
 
-            <div>
-              <picture>
-                <source srcset="inquizi/600px/study-a-deck-600.png" media="(max-width:767px)">
-                <img src="inquizi/1200px/study-a-deck-1200.png" alt="study-deck">
-              </picture>
-            </div>
+            </ul>
 
-          </ul>
-
-          </p>
-
+            </p>
+          </wireframes>
 
           <h3>Design</h3>
 
@@ -203,25 +204,27 @@
           <p>My keytake away from rapidly prototyping a flashcard app was the importance of user research in the beginning and after creating wireframes. It's best to empathize with the user's pain, and design a solution to meet their needs.</p>
 
           <h3>Next Steps</h3>
-          <p>Here is my plan for future iterations:
+          <steps>
+            <p>Here is my plan for future iterations:
 
-          <ul>
-            <li>Conduct more qualitative research to back design decisions</li>
-            <li>Move the wireframes up in fidelity</li>
-            <li>Consider adding fun games</li>
-            <li>Design an app logo in Adobe Illustrator</li>
-          </ul>
+            <ul>
+              <li>Conduct more qualitative research to back design decisions</li>
+              <li>Move the wireframes up in fidelity</li>
+              <li>Consider adding fun games</li>
+              <li>Design an app logo in Adobe Illustrator</li>
+            </ul>
 
-          </p>
+            </p>
+          </steps>
         </div>
       </div>
     </div>
   </main>
 
   <!-- For the footer -->
-  <footer id="contact">
+  <footer id="contact" class="center">
 
-    <div>
+    <div class="container">
       <h2>Let's Connect!</h2>
       <p>
         Do you like my work and want to discuss opportunities? Please get in touch.
@@ -241,7 +244,7 @@
       <div>
         <!--Social Media Layout and Placeholders-->
         <a href="https://www.linkedin.com/in/cecilia-bandalan/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%"
-            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve">
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" class="linkedin">
             <g id="g5891">
               <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
               <g id="shapes">
