@@ -203,16 +203,16 @@ a:hover {
   width: 100%;
 }
 
-skills>ul {
+.skills>ul {
   list-style-type: none;
   padding: 0;
 }
 
-skills>ul>li {
+.skills>ul>li {
   display: block;
 }
 
-skills>ul>li>a {
+.skills>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -253,16 +253,16 @@ skills>ul>li>a {
   max-width: 1000px;
 }
 
-wireframes>ul {
+.wireframes>ul {
   list-style-type: none;
   padding: 0;
 }
 
-wireframes>ul>li {
+.wireframes>ul>li {
   display: block;
 }
 
-wireframes>ul>li>a {
+.wireframes>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -270,16 +270,16 @@ wireframes>ul>li>a {
   width: 100%;
 }
 
-steps>ul {
+.steps>ul {
   list-style-type: none;
   padding: 0;
 }
 
-steps>ul>li {
+.steps>ul>li {
   display: block;
 }
 
-steps>ul>li>a {
+.steps>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
