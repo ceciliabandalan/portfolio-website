@@ -111,9 +111,17 @@ img {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -121,8 +129,13 @@ img {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -130,14 +143,18 @@ img {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
 
 a:visited {
   /* visited link */
@@ -220,7 +237,7 @@ a:hover {
 }
 
 .selfie {
-  max-width: 70%;
+  max-width: 90%;
 }
 
 #about h1 {
@@ -360,7 +377,6 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -372,8 +388,12 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
-  .col-md-12 {
-    width: 50%;
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
   }
 
   [class*="col-"] {
@@ -394,7 +414,7 @@ Large devices (1024px or larger)
   }
 }
 
-  /* ==============================
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {}
