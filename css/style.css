@@ -4,7 +4,6 @@
 
 header {
   background-color: #e8f4ea;
-  text-align: center;
   padding: 10px 0;
 }
 
@@ -13,29 +12,86 @@ header {
   position: relative;
 }
 
-main {
-  padding-top: 0px;
+.logo {
+  max-width: 125px;
+  max-height: 150px;
 }
 
-.logo {
-  max-width: 250px;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 24px;
+  padding-right: 10px;
+  color: #000000;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px dotted #000000;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 56px;
+  background-color: #ffffff;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
+  text-decoration: none;
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  list-style-type: none;
+  padding: 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: 1.125em;
+  font-weight: 400;
   text-transform: uppercase;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+  text-decoration: underline;
+}
+
+nav>ul>li>a:hover {
+  color: #000000;
+  font-style: italic;
   font-weight: 700;
-  color: #4a4a4a;
-  width: 100%;
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  font-style: italic;
+  padding: 0.1em 0.2em;
+  text-decoration: underline;
 }
 
 #hero h1 {
@@ -351,8 +407,28 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle.responsive li {
+    border-top: 0;
   }
 
   [class*="col-"] {
@@ -377,15 +453,26 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  .navtoggle {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
   }
 
   .col-lg-7 {
@@ -413,8 +500,3 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 }
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
