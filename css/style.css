@@ -3,59 +3,20 @@
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #e8f4ea;
-  padding: 10px 0;
+  padding: 10px 0 4px;
 }
 
 header {
-  box-shadow: 1px 5px 25px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 }
 
 .logo {
   max-width: 125px;
   max-height: 150px;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  font-size: 24px;
-  padding-right: 10px;
-  color: #000000;
-}
-
-.navtoggle.responsive li {
-  display: block;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px dotted #000000;
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
-
-main {
-  padding-top: 56px;
-  background-color: #ffffff;
 }
 
 nav>ul {
@@ -92,6 +53,46 @@ nav>ul>li>a:active {
   font-style: italic;
   padding: 0.1em 0.2em;
   text-decoration: underline;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+  padding: 0 0 10px
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 0px;
+  background-color: #ffffff;
 }
 
 #hero h1 {
@@ -398,7 +399,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 20px 30px;
   }
 
   nav {
@@ -407,12 +408,12 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav>ul>li {
-    display: inline-block;
+  nav>ul {
+    margin: 1em 0;
   }
 
-  .col-md-6 {
-    width: 50%;
+  nav>ul>li {
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
@@ -423,17 +424,13 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  .navtoggle.responsive li {
-    border-top: 0;
-  }
-
   [class*="col-"] {
     float: left;
     padding: 10px 10px 10px;
+  }
+
+  .col-md-6 {
+    width: 50%;
   }
 
   .row:after {
@@ -453,50 +450,17 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .navtoggle {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
-  nav>ul {
-    margin: 1em 0;
-  }
-
-  nav>ul>li {
-    display: inline-block;
-  }
-
-  .col-lg-7 {
-    width: 60%;
-  }
-
-  .col-lg-5 {
-    width: 40%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 20px 20px 20px;
-  }
-
-  .row:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .col-md-7 {
+    width: 60%;
+  }
+
+  .col-md-5 {
+    width: 40%;
   }
 }
